@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: weave-gitops
+  namespace: weave-gitops
+spec:
+  rules:
+    - host: weave-gitops.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: weave-gitops
+                port:
+                  number: 80
