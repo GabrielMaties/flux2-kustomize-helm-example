@@ -5,7 +5,7 @@ metadata:
   namespace: weave-gitops
 spec:
   rules:
-    - host: weave-gitops.example.com
+    - host: localhost
       http:
         paths:
           - path: /
