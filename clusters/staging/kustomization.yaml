@@ -4,6 +4,5 @@ resources:
   - ./notifications/alerts/teams-bot-alert.yaml
   - ./notifications/providers/teams-provider.yaml
   - ./flagger
-  - ./flux-system
   - ./GitOps
   - ./prometheus
